@@ -1,16 +1,18 @@
-import React from 'react'
-import './About.css'
+import React from 'react';
+import './About.css';
+import profile from '../../assets/profile-img.jpg';
+import { IoMdCheckmarkCircleOutline } from 'react-icons/io';
 
 const About = () => {
   return (
     <div className="about">
       <div className="about-title">
         <h1>About Me</h1>
-        <img src="" alt="" />
+        <div className="underline"></div>
       </div>
       <div className="about-section">
         <div className="about-left">
-          <img src="" alt="" />
+          <img src={profile} alt="profile" className="about-profile" />
         </div>
         <div className="about-right">
           <div className="about-para">
@@ -24,24 +26,70 @@ const About = () => {
               iure consectetur?
             </p>
           </div>
-          <div className="about-skills">
+          {/* <div className="about-skills">
             <div className="about-skill">
               <p>HTML & CSS</p>
-              <hr style={{ width: '50%' }} />
             </div>
             <div className="about-skill">
               <p>JavaScript</p>
-              <hr style={{ width: '50%' }} />
             </div>
             <div className="about-skill">
               <p>React JS</p>
-              <hr style={{ width: '50%' }} />
+            </div>
+          </div> */}
+          <div className="about-containers">
+            <div className="details-containers">
+              <h2 className="experience-sub-title">My Skills</h2>
+              <div className="article-container">
+                <article>
+                  <IoMdCheckmarkCircleOutline className="checkmark" />
+                  <div>
+                    <h3>HTML</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <IoMdCheckmarkCircleOutline className="checkmark" />
+                  <div>
+                    <h3>CSS</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <IoMdCheckmarkCircleOutline className="checkmark" />
+                  <div>
+                    <h3>Tailwind CSS</h3>
+                    <p>Basics</p>
+                  </div>
+                </article>
+                <article>
+                  <IoMdCheckmarkCircleOutline className="checkmark" />
+                  <div>
+                    <h3>JavaScript</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <IoMdCheckmarkCircleOutline className="checkmark" />
+                  <div>
+                    <h3>React JS</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <IoMdCheckmarkCircleOutline className="checkmark" />
+                  <div>
+                    <h3>Node JS</h3>
+                    <p>Basics</p>
+                  </div>
+                </article>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   );
-}
+};
 
-export default About
+export default About;
