@@ -5,7 +5,7 @@ import { IoCallOutline } from 'react-icons/io5';
 
 const Contact = () => {
   return (
-    <div className="contact">
+    <div id='contact' className="contact">
       <div className="contact-title">
         <h1>Get in touch</h1>
         <div className="underline"></div>

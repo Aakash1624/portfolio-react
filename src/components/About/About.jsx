@@ -5,7 +5,7 @@ import { IoMdCheckmarkCircleOutline } from 'react-icons/io';
 
 const About = () => {
   return (
-    <div className="about">
+    <div id='about' className="about">
       <div className="about-title">
         <h1>About Me</h1>
         <div className="underline"></div>
@@ -26,17 +26,6 @@ const About = () => {
               iure consectetur?
             </p>
           </div>
-          {/* <div className="about-skills">
-            <div className="about-skill">
-              <p>HTML & CSS</p>
-            </div>
-            <div className="about-skill">
-              <p>JavaScript</p>
-            </div>
-            <div className="about-skill">
-              <p>React JS</p>
-            </div>
-          </div> */}
           <div className="about-containers">
             <div className="details-containers">
               <h2 className="experience-sub-title">My Skills</h2>
