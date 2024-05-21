@@ -1,10 +1,11 @@
-import React from 'react'
-import './Hero.css'
-import profile from '../../assets/profile-img.jpg'
+import React from 'react';
+import './Hero.css';
+import profile from '../../assets/profile-img.jpg';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 const Hero = () => {
   return (
-    <div id='home' className="hero">
+    <div id="home" className="hero">
       <img src={profile} alt="profile" className="profile" />
       <h1>
         <span>I'm Aakash,</span> Frontend developer based in INDIA
@@ -15,11 +16,13 @@ const Hero = () => {
         impress with my portfolio showcasing creativity and dedication."
       </p>
       <div className="hero-action">
-        <div className="hero-connect">Connect With Me</div>
+        <AnchorLink className="anchor-link" offset={30} href="#contact">
+          <div className="hero-connect">Connect With Me</div>
+        </AnchorLink>
         <div className="hero-resume">My Resume</div>
       </div>
     </div>
   );
-}
+};
 
-export default Hero
+export default Hero;

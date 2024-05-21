@@ -39,7 +39,6 @@
   font-weight: 500;
 }
 
-
 .about-containers {
   margin: 0 auto;
   max-width: 30rem;
@@ -89,4 +88,50 @@ article {
 
 article p {
   color: rgb(240, 184, 112);
+}
+
+@media (max-width: 768px) {
+  .about {
+    gap: 80px;
+    margin: 50px 70px;
+    align-items: start;
+  }
+
+  .about-title h1 {
+    font-size: 30px;
+    padding: 0;
+  }
+  .about-title img {
+    width: 120px;
+    right: -20px;
+  }
+
+  .about-sections {
+    flex-direction: column;
+  }
+
+  .about-left {
+    display: none;
+  }
+
+  .about-para {
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .article-container h3 {
+    font-size: 18px;
+  }
+
+  .article-container p {
+    font-size: 15px;
+  }
+
+  .article-container {
+    gap: 1.5rem;
+  }
+
+  .checkmark {
+    font-size: 22px;
+  }
 }
