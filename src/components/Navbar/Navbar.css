@@ -51,8 +51,16 @@
 
 @media (max-width: 768px) {
   .navbar {
-    margin: 50px 70px;
+    margin: 10px 70px;
+    align-items: center;
+    justify-content: center;
   }
+
+  .logo {
+    width: 250px;
+    height: 250px;
+  }
+
   .nav-connect {
     display: none;
   }
@@ -92,3 +100,36 @@
   }
 }
 
+@media (max-width: 320px) {
+  .navbar {
+    margin: 5px 20px;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .logo {
+    width: 180px;
+    height: 180px;
+  }
+
+  .nav-menu {
+    width: 220px;
+    right: -100%;
+    gap: 20px;
+    font-size: 18px;
+  }
+
+  .menu-open-icon {
+    right: 10px;
+    width: 35px;
+    height: 25px;
+  }
+
+  .menu-close-icon {
+    top: 10px;
+    left: 90px;
+    width: 25px;
+    height: 25px;
+  }
+}

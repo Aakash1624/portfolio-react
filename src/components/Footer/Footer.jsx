@@ -15,10 +15,10 @@ const Footer = () => {
           </p>
         </div>
         <div className="footer-top-right">
-          <div className="footer-email-input">
+          {/* <div className="footer-email-input">
             <FaRegUser />
             <input type="email" placeholder="Enter your email" />
-          </div>
+          </div> */}
         </div>
       </div>
       <hr />
